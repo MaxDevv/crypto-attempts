@@ -1,6 +1,6 @@
 
 
-with open("/root/Code/crypto-attempts/monero-descending-chrongraphical") as f:
+with open("historical-price-data/monero-descending-chrongraphical") as f:
     moneroPrices = f.readlines()
     moneroPrices = [float(i) for i in moneroPrices]
     # prices

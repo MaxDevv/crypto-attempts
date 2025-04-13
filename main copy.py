@@ -1,9 +1,9 @@
 import polars as pl
 
-df = pl.read_csv("/root/Code/crypto-attempts/ETH_1min.csv")
+df = pl.read_csv("historical-price-data/ETH_1min.csv")
 
 moneroPrices = df.get_column("Open")[1_000_000:4_000_000][::20]
-# with open("/root/Code/crypto-attempts/ethereum-descending-chrongraphical", "r") as f:
+# with open("historical-price-data/ethereum-descending-chrongraphical", "r") as f:
 #     moneroPrices = [float(i) for i in f.read().split("\n") if i != ""]
 
 # len = 4_235_499
